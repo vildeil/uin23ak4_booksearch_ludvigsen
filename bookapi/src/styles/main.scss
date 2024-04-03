@@ -1,0 +1,68 @@
+#root{
+    min-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(230, 218, 203);
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+
+article {
+    background-color: rgb(223, 210, 196);
+    color: black;
+    width: 450px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0.5rem;
+
+
+    h2 {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    img {
+        margin: 1rem;
+    }
+
+    p {
+        width: 100%;
+        margin: 0;
+    }
+     
+    a {
+        width: 100%;
+    }
+}
+
+form {
+    padding: 1rem;
+
+    label {
+        padding: 1rem;
+    }
+
+    input {
+        padding: 0.15rem;
+    }
+
+    
+}
+
