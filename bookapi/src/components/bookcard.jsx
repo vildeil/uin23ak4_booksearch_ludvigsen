@@ -11,7 +11,7 @@ export default function Bookcard({bookcard}){
             <p>Forfatter: {element.author_name}</p>
             <p>Publiserings år: {element.first_publish_year}</p>
             <p>Gjennomsnittlig rating: {element.ratings_average}</p>
-            <a href={`https://www.amazon.com/s?k=${element.id_amazon}`}>Kjøp boken her</a>
+            <a href={`https://www.amazon.com/s?k=${element.isbn? element.isbn[0] :false}`}>Kjøp boken her</a>
         </article>
         )}
         </>
