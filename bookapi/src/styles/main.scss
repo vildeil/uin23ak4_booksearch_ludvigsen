@@ -11,6 +11,10 @@ body {
 
 header {
     width: 100%;
+
+    h1 {
+        color: rgb(42, 41, 41);
+    }
 }
 
 main {
@@ -24,7 +28,7 @@ main {
 
 article {
     background-color: rgb(223, 210, 196);
-    color: black;
+    color: rgb(42, 41, 41);
     width: 400px;
     height: 640px;
     display: flex;
@@ -36,6 +40,7 @@ article {
     h2 {
         width: 100%;
         margin-bottom: 0;
+
     }
 
     img {
@@ -48,16 +53,21 @@ article {
     }
      
     a {
-        width: 100%;
-        color: black;
+        color: rgb(42, 41, 41);
+        background-color: rgb(238, 230, 220);
+        margin: auto;
+        padding: 0.5rem;
+        border-radius: .7rem;
     }
 }
 
 form {
     padding: 1rem;
+    color: rgb(42, 41, 41);
 
     label {
         padding: 1rem;
+        font-weight: bold;
     }
 
     input {
