@@ -25,12 +25,12 @@ main {
 article {
     background-color: rgb(223, 210, 196);
     color: black;
-    width: 450px;
+    width: 400px;
     height: 640px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 0.5rem;
+    border-radius: 0.9rem;
 
 
     h2 {
@@ -49,6 +49,7 @@ article {
      
     a {
         width: 100%;
+        color: black;
     }
 }
 

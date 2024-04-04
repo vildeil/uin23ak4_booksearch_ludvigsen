@@ -4,22 +4,24 @@ import './App.css'
 
 function App() {
 
-  const [content, setContent] = useState([])
+  const [APIvalue, setAPIValue] = useState("James Bond")
+
+  const [bookcard, setBookcard] = useState([])
  
   const getData = async() => {
-    fetch(`https://openlibrary.org/search.json?q=title:"James Bond"`)
+    fetch(`https://openlibrary.org/search.json?q=title:"${APIvalue}"`)
     .then(response => response.json())
-    .then(data => setContent(data.docs))
+    .then(data => setBookcard(data.docs))
     .catch(error => console.error(error))
 }
 
   useEffect(()=>{
     getData()
-  },[])
+  },[APIvalue])
 
   return (
   
-    <Searchresults content={content} />
+    <Searchresults bookcard={bookcard} setAPIValue={setAPIValue} />
   
   )
 }
